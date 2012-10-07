@@ -5,6 +5,7 @@ class Movie < ActiveRecord::Base
 
   def self.find_movies_with_director_by_id(id)
 	director = Movie.find(id).director
+        end
 	if director != nil
 	  if director.length == 0
 		return nil
